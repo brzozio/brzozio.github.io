@@ -1,98 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Michal Brzozowski - portfolio</title>
-        <link rel="stylesheet" href="./main.css" />
-        <link rel="shortcut icon" href="./me.jpg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
-    </head>
-    <body>  
-        <main>
-          <div class="sticky-header">
-            <img id="cute_IMG" src="./cute_EDITED.jpg" alt="IMG">
-            <span class="list">
-              <Ul>
-              <li class="header-li" id="section1">
-                <form action="#firstSection">
-                  <button data-page="section_1" id="button-section-1" type="submit">
-                      ABOUT
-                  </button>
-                </form>
-              </li>
-              <li class="header-li" id="section2">
-                <form action="#secondSection">
-                  <button data-page="section_2" id="button-section-2" type="submit">
-                      SKILLS
-                  </button>
-                </form>
-              </li>
-              <li class="header-li" id="section3">
-                <form action="#thirdSection">
-                  <button data-page="section_3" id="button-section-3" type="submit">
-                      PROJECTS
-                  </button>
-                </form>
-              </li>
-            </Ul>
-            </span>
-          </div>
-          <div class="section-container">
-            <section data-index="0" class="section_1" id="firstSection">
-              <div class="section_1_div">
-                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
-                <a href="./about.html" class="neon-button">ABOUT</a>
-              </div>
-              <div class="section_1_about_info">
-                <h2>Lodz University of Technology Student</h2>
-              </div>
-            </section>
-            <section data-index="1" class="section_2" id="secondSection">
-              <div class="section_1_div">
-                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
-                <a href="./about.html" class="neon-button">ABOUT</a>
-              </div>
-              <div class="section_1_about_info">
-                <h2>Lodz University of Technology Student</h2>
-              </div>
-            </section>
-            <section data-index="2" class="section_3" id="thirdSection">
-              <div class="section_1_div">
-                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
-                <a href="./about.html" class="neon-button">ABOUT</a>
-              </div>
-            </section>
-          </div>
-        </main>
-
-        <!-- Sekcja początkowego ekranu -->
-        <div class="intro">
-            <div class="intro-text">
-              <h1 class="hide">
-                <span class="text">Creating innovation</span>
-              </h1>
-              <h1 class="hide">
-                <span class="text">For Everyday</span>
-              </h1>
-              <h1 class="hide">
-                <span class="text">people.</span>
-              </h1>
-            </div>
-          </div>
-          <div class="slider"></div>
-          <script
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./cute_EDITED.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three JS website</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <header id="headerMain">
+        <h1 class="title">Michał Brzozowski</h1>
+        <p class="description">Welcome to my website!</p>
+    </header>
+    <main>
+        <section class="sectionOne">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laborum tempore mollitia repellendus magnam aperiam soluta nobis? Amet, odit et.</p>
+        </section>
+        <section class="sectionTwo">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum, dolor id laboriosam adipisci veritatis veniam autem dolorum delectus. Est quia minus voluptate praesentium nesciunt quae labore tempore maxime laborum ipsum, aliquid dolore delectus alias sapiente, earum quos vel libero omnis ratione iste, placeat ad. Repellendus quaerat debitis officiis exercitationem!</p>
+        </section>
+        <section class="sectionThree">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae perspiciatis vitae quis debitis placeat fugiat commodi optio! Placeat dignissimos quis explicabo velit harum et inventore facilis officiis vero deserunt repellendus, consequuntur quo, labore tenetur asperiores dolorem eveniet tempora earum repellat exercitationem minima quam? Ab eligendi aut iure. Aliquid dignissimos non natus quas error ratione, nesciunt officiis dolorum odit porro esse deserunt. Quae natus, pariatur molestias nihil veritatis voluptate iure harum architecto neque consectetur perspiciatis repellat eos corrupti temporibus? Illo!</p>
+        </section>
+      </main>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/three.js"></script>
+    <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"
      ></script>
-    <script src="./main.js"></script>
   </body>
 </html>
