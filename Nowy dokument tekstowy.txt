@@ -1,0 +1,21 @@
+.link a:link, a:visited, a:active {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20v;
+    padding: 2rem 8rem;
+    
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+         to right bottom,
+        rgba(255,255,255,0.95),
+        rgba(255,255,255,0.2)
+    );
+    border-radius: 4rem;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+}
