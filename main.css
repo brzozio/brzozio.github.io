@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sekcja stylizacji początkowego ekranu */
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+  }
+  .slider {
+    background: rgb(118, 12, 240,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 8;
+  }
+  
+  .intro-text {
+    color: rgb(118, 12, 240,0.4);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    z-index: 8;
+  }
+  
+  .hide {
+    background: black;
+    overflow: hidden;
+    z-index: 8;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+    z-index: 8;
+  }
+/*----------------- NAGLOWEK -------------------*/
+.sticky-header {
+    background: linear-gradient(
+        to right top,
+        rgba(55,55,55),
+        rgb(112, 108, 108)
+    );
+    box-shadow: 0px 0px 15px 0px black;
+    display: flex;
+    position: sticky;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 115px;
+    width:100%;
+    top: 0;
+    box-shadow: 1rem;
+}
+#cute_IMG{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 50rem;
+}
+.sticky-header ul {
+    display: flex;
+    background-color: white;
+    opacity: 0.95;
+    border-radius: 10rem;
+}
+
+#button-section-1, #button-section-2, #button-section-3  {
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    transition: 600ms ease;
+}
+.header-li {
+    margin: 1rem;
+    list-style-type: none;
+}
+
+#section1, #section2, #section3 {
+    padding: 0.5rem;
+    transition-duration: 1.3s;
+}
+
+
+/*--------------------- SECTIONS ---------------------------*/
+.section-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 87.7vh;
+    width: 100%;
+}
+section {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_1 {
+    background-color: hsl(323 21% 16%);
+    display: flex;
+    flex-direction: row;
+}
+   /* .section_1_about_info {
+        position: relative;
+        transform: translateX(-27rem) translateY(10rem);
+    }*/
+    .section_1_div {
+        position: relative;
+        transform: translateY(-50px);
+        margin-left: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ---------------------------------------------------------- PRZYCISK -----------------------------------------------------------------*/
+            :root {
+             --clr-neon: hsl(317 100% 54%);
+                --clr-bg: hsl(323 21% 16%);
+            }
+            .neon-button {
+                font-size: 4rem;
+      
+                height: 60%;
+                width: 50%;
+                margin-left: 130px;
+                margin-top: 60px;
+                display: inline-block;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--clr-neon);
+                border: var(--clr-neon) 0.125em solid;
+                padding: 0.25em 1em;
+                border-radius: 0.25em;
+      
+                text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+      
+                box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+      
+                position: relative;
+            }
+      
+            .neon-button::before {
+                pointer-events: none;
+                content: "";
+                position: absolute;
+                background: var(--clr-neon);
+                top: 120%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                filter: blur(1em);
+                opacity: 0.7;
+            }
+      
+            .neon-button::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 2em 0.5em var(--clr-neon);
+                opacity: 0;
+                background-color: var(--clr-neon);
+                z-index: -1;
+                transition: opacity 100ms linear;
+            }
+      
+            
+            
+    /* ---------------------------------------------------------------------------------------------------------------------------*/
+    .section_1 h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5rem;
+    }
+    .section_1 h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 5rem;
+        color: white;
+        text-shadow: var(--clr-neon) 5px 5px;
+        margin-left: 30px;
+   }
+    #aboutImg{
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(
+            to right top,
+            rgba(255,255,255,.6),
+            rgba(22,22,22,.8)
+        );
+        padding: 2rem;
+        border-radius: 50rem;
+        box-shadow: 10px 10px 0 10px rgba(241, 9, 164,0.1);
+        ;
+    }
+
+.section_2 {
+    background-color: rgb(255, 0, 179,0.8);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+}
+    .section_2 h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5rem;
+        margin: 1rem;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+    }
+    .section_2 h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+    }
+.section_3 {
+    background-color: rgb(155, 4, 155,0.8);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+}
+    .section_3 h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5rem;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+    }
+    .section_3 h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+}
+
+
+/* ==================================================== MEDIA QUERY ===================================================================== */
+/* Dostosowanie pod osoby z wylaczonymi animacjami*/
+
+@media (prefers-reduced-motion: reduce){
+    *, *::before, *::after {
+        animation-duration: 0.01ms
+        !important;
+        animation-iteration-count: 1
+        !important;
+        transition-duration: 0.01ms
+        !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}
+
+/* Dostosowanie pod mobilna werjse - ANIMACJE HOVER */
+#section1 {
+    background-color: pink;
+    border-radius: 5rem;
+}
+#section2 {
+    background-color: rgb(255, 0, 179,0.8);
+    border-radius: 5rem;
+}
+#section3 {
+    background-color: rgb(155, 4, 155,0.8);
+    border-radius: 5rem;
+}
+@media (hover){ /* Jesli primary pointing device to myszka - np. na komputreze, to beda animacje hover*/
+    #section1, #section2, #section3 {
+        background-color: white;
+    }
+    #section1:hover {
+        background-color: pink;
+        padding: 0.5rem;
+        border-radius: 5rem;
+    }
+    #section2:hover {
+        background-color: rgb(255, 0, 179,0.8);
+        padding: 0.5rem;
+        border-radius: 5rem;
+    }
+    #section3:hover {
+        background-color: rgb(155, 4, 155,0.8);
+        padding: 0.5rem;
+        border-radius: 5rem;
+    }
+    .neon-button:hover,
+    .neon-button:focus {
+        color: rgb(255, 239, 239, 0.7);
+         text-shadow: none;
+     }
+      
+    .neon-button:hover::before,
+    .neon-button:focus::before {
+        opacity: 1;
+    }
+     .neon-button:hover::after,
+     .neon-button:focus::after {
+        opacity: 1;
+    }
+}
+
+/* Dostosowanie pod mobilna wersje */
+@media screen and (max-width: 980px) {
+    .sticky-header {
+        height: 200px;
+        width:100%;
+    }
+    #cute_IMG{
+        width: 150px;
+        height: 150px;
+        padding: 1rem;
+        border-radius: 50rem;
+    }
+    #button-section-1, #button-section-2, #button-section-3  {
+        padding: 1.7rem 1.7rem;
+        border-radius: 3rem;
+        font-size: 2.5rem;
+    }
+    .header-li {
+        margin: 1.3rem;
+    }
+    .section_1 {
+        color: black;
+    }
+    .section_2 {
+        color: black;
+    }
+    .section_3 {
+        color: black;
+    }
+    .section-container {
+        height: 100vh;
+    }
+    section {
+        width: 100%;
+        height: 100vh;
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Slider poczatkowy zmiana wielkosci dla wersji mobilnej */
+    .intro-text {
+        font-size: 5rem;
+      }
+}

@@ -3,78 +3,81 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>DEVELOPER</title>
-        <link rel="stylesheet" href="./style_index.css" />
+        <title>Michal Brzozowski - portfolio</title>
+        <link rel="stylesheet" href="./main.css" />
         <link rel="shortcut icon" href="./me.jpg" />
-        <link
-         href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
-        rel="stylesheet"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;1,900&family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">    <body>
-            
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
+    </head>
+    <body>  
         <main>
-        <section class="glass">
-            <div class="dashboard">
-                <div class="user">
-                    <img class="cute_EDITED" src="./cute_EDITED.jpg" alt="">
-                    <h3 class="MichalBrzozowski">Michal Brzozowski</h3>
-                    <p>Developer</p>
-                </div>
-                <div class="links">
-                    <div class="divLink">
-                        <form action="https://www.instagram.com/brzozio/">
-                            <button id="button" type="submit" value="Instagram">
-                                <img src="./instagram.jfif" alt="Instagram" id="imgLink">
-                            </button>
-                        </form>
-                    </div>
-                    <div class="divLink">
-                         <form action="https://twitter.com/brzoziowastaken">
-                            <button id="button" type="submit" value="Twitter">
-                                <img src="./twitter.png" alt="Twitter" id="imgLink">
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="skills">
-                <div class="status">
-                    <h1>CURRENT SKILLS</h1>
-                </div>
-                <div class="container">
-                    <div class="card">
-                        <div class="card-info" id="C">
-                            <img id="imgC" class="card-info-img" src="./ccplasplas.png" alt="">
-                            <h2 class="card-info-h2" id="h2C">C/C++</h2>
-                            <h3 class="card-info-h3" id="h3C">Learning objective C++</h3>
-                        </div>
-                        <div class="card-info" id="HTML">
-                            <img id="imgHTML" class="card-info-img" src="./htmlcss.png.opdownload" alt="">
-                            <h2 class="card-info-h2" id="h2HTML">HTML/CSS/JavaScript</h2>
-                            <h3 class="card-info-h3" id="h3HTML">Beginner<h3>
-                            <h4 class="card-info-h4" id="h4HTML">Learning on my own</h4>
-                        </div>
-                        <div class="card-info" id="JAVA">
-                            <img id="imgJava" class="card-info-img" src="./java.png" alt="">
-                            <h2 class="card-info-h2" id="h2Java">Java</h2>
-                            <h3 class="card-info-h3" id="h3Java">Will start on October 4th</h3>
-                        </div>
-                  </div>
-                </div>
-            </div>
-        </section>
+          <div class="sticky-header">
+            <img id="cute_IMG" src="./cute_EDITED.jpg" alt="IMG">
+            <span class="list">
+              <Ul>
+              <li class="header-li" id="section1">
+                <form action="#firstSection">
+                  <button data-page="section_1" id="button-section-1" type="submit">
+                      ABOUT
+                  </button>
+                </form>
+              </li>
+              <li class="header-li" id="section2">
+                <form action="#secondSection">
+                  <button data-page="section_2" id="button-section-2" type="submit">
+                      SKILLS
+                  </button>
+                </form>
+              </li>
+              <li class="header-li" id="section3">
+                <form action="#thirdSection">
+                  <button data-page="section_3" id="button-section-3" type="submit">
+                      PROJECTS
+                  </button>
+                </form>
+              </li>
+            </Ul>
+            </span>
+          </div>
+          <div class="section-container">
+            <section data-index="0" class="section_1" id="firstSection">
+              <div class="section_1_div">
+                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
+                <a href="./about.html" class="neon-button">ABOUT</a>
+              </div>
+              <div class="section_1_about_info">
+                <h2>Lodz University of Technology Student</h2>
+              </div>
+            </section>
+            <section data-index="1" class="section_2" id="secondSection">
+              <div class="section_1_div">
+                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
+                <a href="./about.html" class="neon-button">ABOUT</a>
+              </div>
+              <div class="section_1_about_info">
+                <h2>Lodz University of Technology Student</h2>
+              </div>
+            </section>
+            <section data-index="2" class="section_3" id="thirdSection">
+              <div class="section_1_div">
+                <img id="aboutImg" src="./cute_EDITED.jpg" alt="IMG">
+                <a href="./about.html" class="neon-button">ABOUT</a>
+              </div>
+            </section>
+          </div>
         </main>
+
         <!-- Sekcja początkowego ekranu -->
         <div class="intro">
             <div class="intro-text">
               <h1 class="hide">
-                <span class="text">Creating inovation</span>
+                <span class="text">Creating innovation</span>
               </h1>
               <h1 class="hide">
                 <span class="text">For Everyday</span>
@@ -90,6 +93,6 @@
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"
      ></script>
-    <script src="./app.js"></script>
-    </body>
+    <script src="./main.js"></script>
+  </body>
 </html>
